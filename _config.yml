@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -115,9 +115,9 @@ analytics:
 author:
   name             : "Rafael Sinay"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Industrial Civil Engineer, graduated from Universidad del Valle de Guatemala. My work experience is mainly on the design of soil retaining structures, deep foundations, geotechnical and structural modeling and design. I consider myself a person capable of multidisciplinary work and teamwork. "
+  location         : "Japan"
+  email            : "rasinay27@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
