@@ -1,9 +1,215 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Main stylesheet for the website
 search: false
 ---
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}";
+@import "minimal-mistakes";
+
+// Personal visual identity: navy, warm beige, coffee, and white.
+:root {
+  --rs-navy: #1f3048;
+  --rs-navy-soft: #334760;
+  --rs-beige: #e9dfcf;
+  --rs-beige-light: #f7f3ed;
+  --rs-coffee: #806b59;
+  --rs-ink: #252a31;
+  --rs-muted: #6e737a;
+  --rs-line: #e5dfd5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: var(--rs-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--rs-navy);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--rs-coffee);
+}
+
+.masthead {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--rs-line);
+}
+
+.masthead__inner-wrap {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.masthead__menu-item a {
+  font-size: 0.82em;
+  letter-spacing: 0.035em;
+  color: var(--rs-navy);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav .visible-links a:before {
+  background: var(--rs-beige);
+  height: 3px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.archive__item-title {
+  color: var(--rs-navy);
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: 650;
+}
+
+h2 {
+  margin-top: 2em;
+  padding-bottom: 0.45em;
+  border-bottom: 1px solid var(--rs-line);
+}
+
+.page__content {
+  font-size: 0.96em;
+}
+
+.page__content p {
+  margin-bottom: 1.25em;
+}
+
+.page__hero {
+  margin: 1.5em 0 2em;
+  background: var(--rs-beige-light);
+  border: 1px solid var(--rs-line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.page__hero--overlay {
+  background: linear-gradient(120deg, #f7f3ed 0%, #e9dfcf 100%);
+  color: var(--rs-navy);
+  text-shadow: none;
+  padding: 3em 2em;
+}
+
+.page__hero--overlay h1,
+.page__hero--overlay p {
+  color: var(--rs-navy);
+  text-shadow: none;
+}
+
+.page__hero--overlay h1 {
+  font-size: clamp(2em, 5vw, 3.5em);
+  margin-bottom: 0.35em;
+}
+
+.page__hero--overlay p {
+  margin: 0.5em 0;
+}
+
+.feature__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1em;
+  margin-top: 1.5em;
+}
+
+.feature__item {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.feature__item .archive__item {
+  height: 100%;
+  padding: 1.4em 1.5em;
+  background: #fff;
+  border: 1px solid var(--rs-line);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(31, 48, 72, 0.035);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.feature__item .archive__item:hover {
+  transform: translateY(-3px);
+  border-color: #cbbda8;
+  box-shadow: 0 10px 26px rgba(31, 48, 72, 0.08);
+}
+
+.feature__item .archive__item-title {
+  margin-top: 0;
+  font-size: 1.25em;
+}
+
+.feature__item .archive__item-title a {
+  text-decoration: none;
+}
+
+.feature__item p {
+  font-size: 0.9em;
+}
+
+.feature__item p:last-child {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid var(--rs-beige);
+}
+
+.page__footer {
+  background: var(--rs-navy);
+  color: #f7f3ed;
+  border-top: 4px solid var(--rs-beige);
+}
+
+.page__footer a,
+.page__footer footer {
+  color: #f7f3ed;
+}
+
+.btn,
+button,
+input[type="submit"] {
+  background-color: var(--rs-navy);
+  border-radius: 7px;
+}
+
+hr {
+  border-top: 1px solid var(--rs-line);
+}
+
+blockquote {
+  border-left-color: var(--rs-beige);
+  color: var(--rs-muted);
+}
+
+@media screen and (max-width: 600px) {
+  .feature__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .page__hero--overlay {
+    padding: 2em 1.25em;
+  }
+
+  .page__hero--overlay h1 {
+    font-size: 2em;
+  }
+}
