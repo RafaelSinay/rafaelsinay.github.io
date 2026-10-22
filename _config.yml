@@ -12,16 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Rafael Sinay"
+title                    : "Rafael Sinay Oliva"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Rafael Sinay"
-description              : "Structural & Earthquake Engineering | Research & Life"
+name                     : "Rafael Sinay Oliva"
+description              : "Structural Engineering · Research · Guatemala to Japan"
 url                      : "https://rafaelsinay.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Rafael Sinay"
+  name             : "Rafael Sinay Oliva"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Industrial Civil Engineer, graduated from Universidad del Valle de Guatemala. My work experience is mainly on the design of soil retaining structures, deep foundations, geotechnical and structural modeling and design. I consider myself a person capable of multidisciplinary work and teamwork. "
   location         : "Japan"
